@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url('./assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Young Serif';
+    src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: hsl(30, 54%, 90%);
+    font-size: 16px;
+    width: 100vw;
+    height: auto;
+    font-family: 'Outfit', serif;
+    display: flex;
+    justify-content: center;
+    color:hsl(14, 45%, 36%);
+}
+.container{
+    margin: 5rem;
+    border-radius: 1rem;
+    background-color: hsl(0, 0%, 100%);
+    width: 40rem;
+    padding: 2rem;
+}
+.font-ys{
+    font-family: 'Young Serif', serif;
+}
+img {
+    border-radius: 1rem;
+    width: 100%;
+    height: auto;
+}
+.title{
+    font-size: 2rem;
+    font-weight: 400;
+    color: hsl(24, 5%, 18%);
+}
+.description{
+    font-size: 0.9rem;
+    color: hsl(30, 10%, 34%);
+}
+.intro-box{
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: hsl(330, 100%, 98%);
+}
+ol{
+    padding-left: 1rem;
+}
+
+ol li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold; 
+}
+
+li{ 
+    margin: 0.5rem;
+    padding-left: 1rem
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+}
+tr{ 
+    border-bottom: 1px solid hsl(0, 0%, 90%);
+}
+td{
+    padding: 1rem 0 0.75rem 2rem;
+    font-size: 0.9rem;
+    color: hsl(14, 45%, 36%);
+}
+tr:last-child{
+    border-bottom: none;
+}
+
+
+.attribution{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    text-align: end;
+    font-size: 0.8rem;
+    margin: 0.5rem;
+    z-index: 1;
+}
+
+
+@media (max-width: 375px) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+   
+    .container{
+        margin: 0;
+        margin-bottom: 2rem;
+        border-radius: 0;
+        width: 90vw;
+        padding: 2rem;
+        z-index: 2;
+    }
+    img {
+        border-radius: 0;
+        width: 100vw;
+    }
+}
